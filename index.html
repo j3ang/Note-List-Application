@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project 1 - jwang206@hawk.iit.edu</title>
+    <!-- import CSSs -->
+    <link rel=stylesheet href="css/screen.css">
+    <link rel=stylesheet href="css/skeleton.css">
+    <!-- import jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
+    <!-- import app.js -->
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <main class="container">
+        <h2 id="header"> Notes </h2>
+        <button id="new_note"> New Note </button>
+        <!-- another form -->
+        <form id="new_form">
+            <!-- dates -->
+            <div class="u-full-width">
+                <label for="date">Today's date</label>
+                <h6 id="date"></h6>
+            </div>
+            <!-- subject and name -->
+            <div class="row">
+                <div class="six columns">
+                    <label for="exampleEmailInput">Subject</label>
+                    <input class="u-full-width" placeholder="Meeting" id="subject" type="text">
+                </div>
+                <div class="six columns">
+                    <label for="exampleRecipientInput">Name</label>
+                    <input class="u-full-width" placeholder="John Smith" id="full-name" type="text">
+                </div>
+            </div>
+
+            <!-- message -->
+            <label for="exampleMessage">Message</label>
+            <textarea class="u-full-width" placeholder="Hi Dave …" id="note_detail"></textarea>
+            <input id="add" class="button-primary" value="Add" type="submit" />
+        </form>
+        <!-- form -->
+        <div id="load-note"></div>
+        <h3 id="sub_title">My Notes</h3>
+        <div id="results-wrapper">
+            <div id="list-wrapper"></div>
+            <div id="notes_detail"></div>
+        </div>
+    </main>
+</body>
+
+</html>
